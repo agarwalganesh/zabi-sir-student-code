@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main() {
+    float income , tax;
+    scanf("%f",&income);
+    if(income <= 250000 && income>=0){
+        tax = 0.00;
+       printf("%.2f", tax);
+    }else if (income > 250000 && income <= 500000){
+        tax =  (income-250000)*0.05;
+        printf("%.2f",tax);
+    }else if (income > 500000 && income <= 1000000){
+        tax = 12500.00 +(income-500000)*0.2;
+        printf("%.2f", tax);
+    }else if (income > 1000000 ){
+        tax = 12500.00 + 100000.00 + (income-1000000)*0.3;
+        printf("%.2f", tax);
+    } else{
+        printf("");
+    }
+    return 0;
+}
