@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+int main() {
+
+    float n;
+    scanf("%f", &n);
+    if(n<0){
+        printf("Invalid Input!"); 
+    }
+        else if(n<=100){
+            printf("The electricity bill is: %.2f.", ((n*5)-((n*5)*0.1)));
+        }
+    else if(n>100 && n<=200){
+            printf("The electricity bill is: %.2f.", ( (100*5 + (n-100)*7)-((100*5 + (n-100)*7)*0.1)));
+            
+        }
+        else if(n>200 && n<=300){
+            printf("The electricity bill is: %.2f.", (100*5 + (n-100)*7));
+            
+        }
+     else if(n>300 ){
+            printf("The electricity bill is: %.2f.", (100*5 + 200*7 + (n-300)*10));
+            
+        }
+    
+    return 0;
+}
