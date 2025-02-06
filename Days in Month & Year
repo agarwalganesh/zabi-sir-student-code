@@ -1,0 +1,73 @@
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+int months, years;
+    scanf("%d", &months);
+     // scanf("%d", &days);
+     scanf("%d", &years);
+    if((months<=0 || months>12) &&(years<1)){ 
+        printf("Invalid Month\nInvalid Year");
+    }
+    else if(months<=0 || months>12){
+        printf("Invalid Month");
+    }
+    else if(years<1){
+        printf("Invalid Year");
+    }
+    else if(months==1){
+         printf("31");
+    
+    }
+     else if(months==2){
+         if((years%4==0 && (years%400==0 || years%100!=0 )))
+         {
+            printf("29");
+         }
+         else{
+             printf("28");
+             }
+    }
+     else if(months==3){
+         printf("31");
+    
+    }
+     else if(months==4){
+         printf("30");
+    
+    }
+     else if(months==5){
+         printf("31");
+    
+    }
+     else if(months==6){
+         printf("30");
+    
+    }
+     else if(months==7){
+         printf("31");
+    
+    }
+     else if(months==8){
+         printf("31");
+    
+    }
+     else if(months==9){
+         printf("30");
+    
+    }
+     else if(months==10){
+         printf("31");
+    
+    }
+    
+     else if(months==11){
+         printf("30");
+    
+    }
+     else {
+         printf("31");
+    
+    }
+    
+}
