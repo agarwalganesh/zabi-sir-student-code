@@ -1,0 +1,223 @@
+#include <stdio.h>
+
+int main() {
+    int a,b,c,d,e,f,g,h,j,i,index0, index1, index2, value1, value2, value3;
+  scanf("%d %d %d %d %d %d %d %d %d %d", &a,&b,&c,&d,&e,&f,&g,&h,&i,&j);
+    scanf("%d %d", &index0,&value1);
+        scanf("%d %d", &index1,&value2);
+    scanf("%d %d", &index2,&value3);
+
+    if(index0==0||index1==0||index2==0){
+     if(index0==0){
+         a= a+value1;
+         if(a>=10){
+             a=a-10;
+         }
+     }else if(index1==0){
+         a= a+value2;
+         if(a>=10){
+             a=a-10;
+     }
+     }
+         else if(index2==0){
+         a= a+value3;
+         if(a>=10){
+             a=a-10;
+         }
+    }
+    }
+    
+    
+    
+     if(index0==1||index1==1||index2==1){
+     if(index0==1){
+         b=b+value1;
+         if(b>=10){
+            b=b-10;
+         }
+     }else if(index1==1){
+        b=b+value2;
+         if(b>=10){
+            b=b-10;
+     }
+     }
+         else if(index2==1){
+        b=b+value3;
+         if(b>=10){
+            b=b-10;
+         }
+    }
+    }
+    
+    
+     if(index0==2||index1==2||index2==2){
+     if(index0==2){
+         c=c+value1;
+         if(c>=10){
+            c=c-10;
+         }
+     }else if(index1==2){
+        c=c+value2;
+         if(c>=10){
+            c=c-10;
+     }
+     }
+         else if(index2==2){
+        c=c+value3;
+         if(c>=10){
+            c=c-10;
+         }
+    }
+    }
+    
+    
+     if(index0==3||index1==3||index2==3){
+     if(index0==3){
+         d=d+value1;
+         if(d>=10){
+            d=d-10;
+         }
+     }else if(index1==3){
+        d=d+value2;
+         if(d>=10){
+            d=d-10;
+     }
+     }
+         else if(index2==3){
+        d=d+value3;
+         if(d>=10){
+            d=d-10;
+         }
+    }
+    }
+    
+    
+    if(index0==4||index1==4||index2==4){
+     if(index0==4){
+         e=e+value1;
+         if(e>=10){
+            e=e-10;
+         }
+     }else if(index1==4){
+        e=e+value2;
+         if(e>=10){
+            e=e-10;
+     }
+     }
+         else if(index2==4){
+        e=e+value3;
+         if(e>=10){
+            e=e-10;
+         }
+    }
+    }
+    
+    
+    
+     if(index0==5||index1==5||index2==5){
+     if(index0==5){
+         f=f+value1;
+         if(f>=10){
+            f=f-10;
+         }
+     }else if(index1==5){
+        f=f+value2;
+         if(f>=10){
+            f=f-10;
+     }
+     }
+         else if(index2==5){
+        f=f+value3;
+         if(f>=10){
+            f=f-10;
+         }
+    }
+    }
+    
+    
+    
+   if(index0==6||index1==6||index2==6){
+     if(index0==6){
+         g=g+value1;
+         if(g>=10){
+            g=g-10;
+         }
+     }else if(index1==6){
+        g=g+value2;
+         if(g>=10){
+            g=g-10;
+     }
+     }
+         else if(index2==6){
+        g=g+value3;
+         if(g>=10){
+            g=g-10;
+         }
+    }
+    }
+    
+    if(index0==7||index1==7||index2==7){
+     if(index0==7){
+         h=h+value1;
+         if(h>=10){
+            h=h-10;
+         }
+     }else if(index1==7){
+        h=h+value2;
+         if(h>=10){
+            h=h-10;
+     }
+     }
+         else if(index2==7){
+        h=h+value3;
+         if(h>=10){
+            h=h-10;
+         }
+    }
+    }
+    
+     if(index0==8||index1==8||index2==8){
+     if(index0==8){
+         i=i+value1;
+         if(i>=10){
+            i=i-10;
+         }
+     }else if(index1==8){
+        i=i+value2;
+         if(i>=10){
+            i=i-10;
+     }
+     }
+         else if(index2==8){
+        i=i+value3;
+         if(i>=10){
+            i=i-10;
+         }
+    }
+    }
+    
+    
+     if(index0==9||index1==9||index2==9){
+     if(index0==9){
+         j=j+value1;
+         if(j>=10){
+            j=j-10;
+         }
+     }else if(index1==9){
+        j=j+value2;
+         if(j>=10){
+            j=j-10;
+     }
+     }
+         else if(index2==9){
+        j=j+value3;
+         if(j>=10){
+            j=j-10;
+         }
+    }
+    }
+    printf("%d %d %d %d %d %d %d %d %d %d",a,b,c,d,e,f,g,h,i,j);
+    
+   
+return 0;
+}
