@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+int main() {
+
+   int n, i,a;
+    scanf("%d %d", &n,&i);
+    a=(1<<i);
+    // n=n&a;
+    if(n&a){
+        printf("1");
+    }else{printf("0");}
+    return 0;
+}
