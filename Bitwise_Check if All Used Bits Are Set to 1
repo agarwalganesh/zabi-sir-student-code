@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int main() {
+    int n,a;
+    scanf("%d",&n);
+    
+    a=n&(n+1);
+    if(n==0)
+        {
+        printf("No");
+        }  
+    else if(a==0)
+    {
+        printf("Yes");
+    }
+    
+    else
+    {
+        printf("No");
+    }
+
+      
+    return 0;
+}
