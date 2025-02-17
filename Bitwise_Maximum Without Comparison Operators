@@ -1,0 +1,12 @@
+#include <stdio.h>
+
+int main() {
+int a,b,c,d;
+    scanf("%d %d", &a,&b);
+    c=a-b;
+    d=(c>>31);
+    int e = (a&(~d))| (b&d);
+    printf("%d",e);
+    
+    return 0;
+}
