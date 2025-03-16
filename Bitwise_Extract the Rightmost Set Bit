@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+ int main() {
+  long long  int n;
+    scanf("%lld", &n);
+
+    if (n == 0) {
+        printf("0"); 
+        return 0;
+    }
+    
+    int count = 1;
+    int bit = n & -n;
+
+    while (bit > 1) {
+        bit = bit >> 1;
+        count++;
+    }   
+    
+    printf("%d", count);
+    return 0;
+}
+-2147483648
