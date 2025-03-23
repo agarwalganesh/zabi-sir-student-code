@@ -1,0 +1,68 @@
+#include <stdio.h>
+
+int main() 
+{
+    double num, money, min_money;
+    int n;
+
+    scanf("%lf %d", &num, &n);
+    money = num;
+    min_money = num;
+
+    if (num >= 50 && num <= 1000000 && n >= 0) 
+    {
+        int i;
+        for (i = 1; i <= n; ++i)
+        {
+            if (money < 0.4 * num) 
+            {
+                printf("Stopped early after %d days: %.2f\n", i-1, money);
+                printf("Minimum amount held by Bhaskar: %.2f\n", min_money);
+                printf("Better Luck Next Time!\n");
+                return 0;
+            }
+
+            if (i % 2 == 0 && i % 3 == 0) 
+            {
+              money += money * 0.7;
+            } 
+            else if (i % 3 == 0) {
+                money -= money / 5;
+            }
+            else if (i % 2 == 0) {
+                money -= money / 8;
+            }
+            else 
+            {
+                money -= money * 0.1;
+            }
+
+            if (money < min_money) {
+                min_money = money;
+            }
+              
+             if (i%6==0)
+             {
+                i=i+6;
+                 if (i>n){
+                    break;
+                }
+             }
+            
+
+        }
+
+
+        printf("After %d days: %.2f\n", n, money);
+        printf("Minimum amount held by Bhaskar: %.2f\n", min_money);
+        if (money >= 0.7 * num) {
+            printf("Lucky Bhaskar\n");
+        } else {
+            printf("Better Luck Next Time!\n");
+        }
+    }
+
+    return 0;
+}
+
+
