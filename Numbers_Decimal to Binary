@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int main() {
+    int num;
+    
+    scanf("%d", &num);
+    int temp = num;
+
+    int binary = 0, place = 1;
+
+    if (num == 0) { 
+        printf("Binary equivalent of %d:",num);
+         printf(" %d", binary); 
+        return 0;
+    }
+
+    while (num > 0) {
+        binary = binary + (num % 2) * place; 
+        num = num / 2;
+        place = place * 10; 
+    }
+printf("Binary equivalent of %d:",temp);
+    printf(" %d", binary); 
+    return 0;
+}
