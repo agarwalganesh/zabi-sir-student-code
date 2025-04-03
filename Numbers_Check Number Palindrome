@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+int main()
+{
+    int n;
+    scanf("%d",&n);
+    int rem=0;
+    
+    int temp= n ;
+  
+    while(n!=0){
+      int LastDigit = n%10;
+      rem = rem*10+LastDigit;
+      n=n/10;
+     
+      
+  } 
+    // printf("%d" , rem);
+    if(temp==rem){
+        printf("YES");
+        
+    }else{
+        printf("NO");
+    }
+    return 0;
+}  
