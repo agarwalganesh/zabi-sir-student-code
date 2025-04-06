@@ -1,0 +1,30 @@
+
+
+#include <stdio.h>
+
+int main() {
+    long int num;
+    scanf("%ld", &num);
+    int sum = 0;
+
+    if (num == 1) {
+        printf("1");
+        return 0;
+    }
+
+    
+
+    for (int i = 2; i * i <= num;++i) {
+        while (num % i == 0) {
+            sum =sum + i;
+            num =num/i;
+        }
+    }
+
+    if (num > 1) {
+        sum =sum + num;
+    }
+
+    printf("%d", sum);
+    return 0;
+}
