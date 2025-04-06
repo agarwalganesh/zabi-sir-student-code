@@ -1,0 +1,34 @@
+#include <stdio.h>
+
+int main() {
+    int N, count = 0, num = 2, sum = 0;
+    scanf("%d", &N);
+
+    while (count < N) {
+        
+        
+        
+        
+        int flag = 1; 
+        
+        for (int i = 2; i * i <= num; ++i) {
+            if (num % i == 0) {
+                flag = 0;
+                break;
+            }
+        }
+
+        if (flag) {
+            sum =sum + num; 
+            count++;    
+        }
+        
+        
+        
+        
+        num++; 
+    }
+
+    printf("%d\n", sum);
+    return 0;
+}
