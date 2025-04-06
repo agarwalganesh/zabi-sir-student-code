@@ -1,0 +1,40 @@
+#include <stdio.h>
+
+int main() 
+{
+    int n;
+    scanf("%d", &n);
+
+    int count = 0;
+    
+       for (int i = 1; i <= n; i++){
+        int factor = 0;
+        int temp = i;
+           
+        
+        for ( int num=2 ; num * num <= temp ; num++) 
+        {
+            while (temp % num == 0) 
+            {
+                factor++;
+                temp=temp/num;
+            }
+           
+        }
+           
+           
+        if (temp > 1) 
+        {
+            factor++;
+        }
+
+        if (factor == 2)
+        {
+            count++;
+        }
+    }
+
+    printf("%d", count);
+
+    return 0;
+}
