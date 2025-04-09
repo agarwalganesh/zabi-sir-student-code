@@ -1,0 +1,48 @@
+#include <stdio.h>
+
+int main() {
+    int N, P1 = 0, P2 = 0;
+    scanf("%d", &N); // Read input
+
+    int num = N + 1;
+    while (1) {
+        int isPrime = 1;
+        for (int i = 2; i * i <= num; i++) {
+            if (num % i == 0) {
+                isPrime = 0;
+                break;
+            }
+        }
+        
+        
+        if (isPrime) {
+            P1 = num; //N+1
+            break;
+        }
+        num++;
+    }
+
+     int num1 = N - 1;
+    while (num1 > 1) {
+        int isPrime = 1;
+        for (int i = 2; i * i <= num1; i++) {
+            if (num1 % i == 0) {
+                isPrime = 0;
+                break;
+            }
+        }
+        
+        
+        
+        if (isPrime) {
+            P2 = num1;//N-1
+            break;
+        }
+        num1--;
+    }
+
+  
+    printf("%d\n", P1 - P2);
+
+    return 0;
+}
