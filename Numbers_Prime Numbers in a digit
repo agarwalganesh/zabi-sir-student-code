@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main() {
+
+long long int num;
+    scanf("%lld",&num);
+    
+ if (num== 0) {
+        printf("0");
+        return 0;
+ }    
+ int count=0;
+    while(num!=0){
+    int lastDigit = num%10;   
+        num=num/10;
+        if(lastDigit==2|| lastDigit==3 || lastDigit==5 || lastDigit==7 ||lastDigit==-2|| lastDigit==-3 || lastDigit==-5 || lastDigit==-7 ){
+      count++;
+        }
+    }  
+    printf("%d",count);
+    return 0;
+}
