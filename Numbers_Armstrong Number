@@ -1,0 +1,38 @@
+#include <stdio.h>
+#include <math.h>
+int main() {
+
+    int n,lastDigit;
+    scanf("%d",&n);
+    int count =0;
+    int sum = 0;
+    int temp = n;
+    int ganesh = temp;
+    
+    
+    while(n!=0){
+        count++;
+        n=n/10;
+        
+    }
+    
+     // printf("%d\n",count);
+    
+    int power;
+    while(temp!=0){
+        lastDigit = temp%10;  
+        temp = temp/10;
+        power= pow(lastDigit,count);
+        sum = sum+power;
+        
+    }
+    
+     // printf("%d\n",power);
+        // printf("%d\n",sum);
+ if(ganesh==sum)
+     printf("YES");
+    else
+        printf("NO");
+   
+    return 0;
+}
