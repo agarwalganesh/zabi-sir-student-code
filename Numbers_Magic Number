@@ -1,0 +1,52 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+
+    int n;
+    scanf("%d",&n);
+    int temp=n;
+    int rem=0;
+    int sum=0;
+   
+     while(n!=0){
+    int lastDigit = n%10;
+         
+         rem = rem*10 + lastDigit;
+         n= n/10;
+         sum = sum+lastDigit;
+         
+     }
+    // printf("%d\n",sum);
+    
+    
+    int sumDigit=sum;
+    
+    int rem1;
+    
+    int sum1=0;
+    
+      while(sumDigit!=0){
+    int lastDigit = sumDigit%10;
+         
+         rem1 = rem1*10 + lastDigit;
+         sumDigit= sumDigit/10;
+          
+         sum1= sum1+lastDigit;
+         
+     }
+       // printf("%d\n",sum1);
+    
+        
+ if(sum1==1 ||sum1 ==10){
+        printf("%d is a magic number", temp);
+    }
+    else{
+        printf("%d is not a magic number", temp);
+
+    }
+    
+    return 0;
+}
