@@ -1,0 +1,43 @@
+
+#include <stdio.h>
+
+int main() {
+    int num; 
+    scanf("%d", &num);
+    
+    int count = 0;
+
+    for (int N = 2; N <= num - 2; N++) { 
+        
+        int prime = 0, prime1 = 0;
+
+       
+        for (int i = 2; i * i <= N; i++) {
+            if (N % i == 0) {
+                prime = 1; 
+                break;
+            }
+        }
+
+       
+        int N1 = N + 2;
+        for (int i = 2; i * i <= N1; i++) {
+            if (N1 % i == 0) {
+                prime1 = 1; 
+                break;
+            }
+        }
+
+       
+        if (prime == 0 && prime1 == 0) { 
+            count++;
+        }
+    }
+
+    printf("%d", count);
+    return 0;
+}
+
+
+
+  
