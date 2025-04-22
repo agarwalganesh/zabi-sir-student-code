@@ -1,0 +1,38 @@
+
+
+
+
+
+#include <stdio.h>
+int isPrime(int );
+
+int main() {
+int n; 
+scanf("%d", &n);
+for(int i =1; i<=n ;i++){
+    int p =i;
+    int q = n-p;
+    if(isPrime(p)  && isPrime(q)){
+        printf("%d %d",p,q);
+        return 0;
+    }
+}
+
+
+     printf("No Solution");
+    return 0;
+}
+int isPrime(int x){
+    if(x<2){
+        return 0;
+    }
+    for(int i =2; i*i<=x ; i++){
+        if(x%i==0){
+            return 0;
+        }
+    }
+    return 1;
+}
+
+
+      
