@@ -1,0 +1,50 @@
+#include <stdio.h>
+
+int find_unique_digit_product(int n) {
+
+ int product=1;
+   int repeat=0;  
+    
+    
+    while(n!=0){
+       int lastdigit = n%10;  // last digit nikali 
+ 
+        int uniqueNo=1;     // digit repeat ko remove karne ke liye flag use 
+        
+        
+        
+        
+    int checkRepeat = repeat;  
+        
+        
+        
+        while (checkRepeat > 0) {
+            if (checkRepeat % 10 == lastdigit) {
+                uniqueNo = 0;  
+                break;
+            }
+            checkRepeat = checkRepeat / 10;
+        }     
+        if (uniqueNo){    
+             
+            product =product * lastdigit;   // product ko digit ko store hai 
+           repeat = repeat * 10 + lastdigit;      //rev. form maine store kiya hai repeat ko check kiya hai ki khai                                                          value repeat tho nho ho rho h 
+        }
+         n = n/10;    
+          
+}  
+   
+return product;
+
+}
+
+int main() {
+    int n;
+    scanf("%d", &n);
+    printf("%d\n", find_unique_digit_product(n));
+    return 0;
+}
+
+
+
+
