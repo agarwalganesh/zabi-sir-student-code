@@ -1,0 +1,42 @@
+
+#include <stdio.h>
+#include <math.h>
+int main()
+{
+   int a,b,c ;
+   scanf("%d %d %d",&a , &b , &c);
+    float D , x1, x2 , x3, x4;
+    
+    D = ((b*b)- 4*a*c);
+    
+
+     
+     
+     if( D ==0 ){
+          x1 = ((-b) + sqrt(D))/(2.0*a);
+    
+     x2 = ((-b) - sqrt(D))/(2.0*a);
+         printf("Roots: %.2f, %.2f\n", x1,x2);
+         printf("Type: Real and Equal");
+         
+     }else if( D>0 ){
+          x1 = ((-b) + sqrt(D))/(2*a);
+    
+     x2 = ((-b) - sqrt(D))/(2.0*a);
+         printf("Roots: %.2f, %.2f\n", x1,x2);
+         printf("Type: Real and Distinct");
+         
+     }else{
+         
+           x3 = -b / (2.0 * a);
+         
+        x4 =  sqrt(-D) / (2.0 * a);
+                 printf("Roots: %.2f + %.2fi, %.2f - %.2fi\n", x3, x4, x3, x4);
+         
+         printf("Type: Complex");
+         
+          
+     }
+   
+    return 0;
+}
