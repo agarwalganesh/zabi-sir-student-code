@@ -1,0 +1,33 @@
+#include <stdio.h>
+
+int is_spy_number(int n) {
+    
+    int temp = n ;
+    int sum = 0;
+     while(n!=0){
+         int lastdigit=n%10;
+         sum = sum + lastdigit;
+         n = n/10;
+         
+         
+     }
+  
+        int product = 1;
+     while(temp!=0){
+         int lastdigit=temp%10;
+         product = product * lastdigit;
+         temp = temp/10;
+         
+         
+     }
+    
+
+        return(sum == product);
+}
+
+int main() {
+    int n;
+    scanf("%d", &n); \
+    printf("%d\n", is_spy_number(n));
+    return 0;
+}
